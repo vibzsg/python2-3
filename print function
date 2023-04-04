@@ -1,0 +1,29 @@
+1) print function
+print keyword in Python 2.x is replaced by the print() function in Python 3.x. However,
+parentheses work in Python 2 if space is added after the print keyword because the interpreter evaluates it as an expression. 
+
+print 'Hello, Geeks'	 # Python 3.x doesn't support
+
+print('Hope You like these facts')
+
+
+
+'''
+
+Output in Python 2.x :
+
+Hello, Geeks
+
+Hope You like these facts
+
+
+
+Output in Python 3.x :
+
+File "a.py", line 1
+
+	print 'Hello, Geeks'
+
+					^
+SyntaxError: invalid syntax
+
