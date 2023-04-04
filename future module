@@ -1,0 +1,30 @@
+----------------------------------------__future__ module:-----------------------------------------------------------------------------
+This is basically not a difference between the two versions, but a useful thing to mention here. The idea of the __future__ module is to help migrate to Python 3.x. 
+If we are planning to have Python 3.x support in our 2.x code, we can use _future_ imports in our code. 
+For example, in the Python 2.x code below, we use Python 3.x’s integer division behavior using the __future__ module
+
+# In below python 2.x code, division works
+
+# same as Python 3.x because we use __future__
+
+from __future__ import division
+
+print 7 / 5
+
+print -7 / 5
+
+
+output:
+1.4 
+
+-1.4 
+
+
+------------------Another example where we use brackets in Python 2.x using __future__ module: ------------------------------------------------------------------------
+
+from __future__ import print_function	
+
+print('GeeksforGeeks')
+
+Output: 
+GeeksforGeeks 
